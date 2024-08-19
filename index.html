@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;
+    color: white; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Rating state start -->
+<main>
+  <div id="Prim">
+  <img src="images/icon-star.svg" alt="" id="star">
+  <h1>How did we do?</h1>
+
+  <p>Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+<section>
+  <button onclick="clicou(1)"  id="1" onmouseenter="OnOver(1)" onmouseleave="OnLeave(1)">1</button> 
+  <button id="2" onclick="clicou(2)" onmouseover="OnOver(2)" onmouseleave="OnLeave(2)">2</button>
+  <button id="3" onclick="clicou(3)" onmouseover="OnOver(3)" onmouseleave="OnLeave(3)">3</button>
+  <button id="4" onclick="clicou(4)" onmouseover="OnOver(4)"onmouseleave="OnLeave(4)">4</button>
+  <button id="5" onclick="clicou(5)" onmouseover="OnOver(5)"onmouseleave="OnLeave(5)">5</button>
+</section>
+<button id="sub" onclick="submitou()"><b>SUBMIT</b></button>
+</div>
+  <!-- Rat4ng state end -->
+
+  <!-- Thank you state start -->
+<section id="after">
+  <img src="images/illustration-thank-you.svg" alt="" id="FotoFina">
+  <h2 id="Mudar">You selected out of 5</h2>
+
+  <h1>Thank you!</h1>
+
+  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+</section>
+  <!-- Thank you state end -->
+</main>
+  <script src="script.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/PedroEustaq">PedroEustaq</a>.
+  </div>
+</body>
+</html>
